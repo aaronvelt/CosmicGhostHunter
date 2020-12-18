@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3258765762913544121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3258765762913544123}
+  - component: {fileID: 3258765762913544120}
+  - component: {fileID: 3258765762913544122}
+  - component: {fileID: 8844143407467608707}
+  m_Layer: 0
+  m_Name: GhostOrb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3258765762913544123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258765762913544121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.964, y: 2.136, z: 17.041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6170528085395577163}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3258765762913544120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258765762913544121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09016c0f1970e84c99aecd6687d6594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbDamage: 10
+  orbSpeed: 20
+  orbRange: 100
+  playerPos: {x: -20.732275, y: 2.0772598, z: 33.746696}
+  explosionEffect: {fileID: 8527720570428786697, guid: d95f7c2ff026b454fbc236274dd83d17, type: 3}
+  explosionSound: {fileID: 8300000, guid: 82e989ccf41fa9a47aa080fecd3606d8, type: 3}
+--- !u!136 &3258765762913544122
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258765762913544121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8844143407467608707
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258765762913544121}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &6027382301035854864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3258765762913544123}
+    m_Modifications:
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758406187284139859, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+      propertyPath: m_Name
+      value: GhostOrbPart
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+--- !u!4 &6170528085395577163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 434472970986251611, guid: 5bf40b4b525bc29489f99cc932e14502, type: 3}
+  m_PrefabInstance: {fileID: 6027382301035854864}
+  m_PrefabAsset: {fileID: 0}
